@@ -6,7 +6,7 @@ Página principal de grupo bscit
         https://git-scm.com/download/win (se puede descargar de esa página)
      
 ## Clonar el proyecto:
-  >git clone https://github.com/SebastianWilde/sms_project.git
+  >git clone https://github.com/SebastianWilde/bscitgroup.git
       
 ## Realizar cambios:
 Para realizar una nueva tarea, cambiarnos a la rama master.
