@@ -25,7 +25,8 @@
     </script>
     <link href="~/css/creative.min.css" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <!--
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -66,14 +67,39 @@
                         <a class="nav-link js-scroll-trigger" href="#contact">Contactenos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Registrar</a>
+                       
 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Entrar</a>
-                    </li>
-                </ul>
-            </div>
+                        <!---->
+                                        
+
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Registrarse</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Registro</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Datos</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Registrar</button>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Entrar</a>
+            </li>
+            </ul>
+        </div>
         </div>
     </nav>
 
@@ -355,7 +381,7 @@
             <div class="row titulos-footer">
                 <div class="col-sm-3"><picture><img src="img/portfolio/fullsize/logo.jpg" class="img-responsive" alt="BS Grupo" title="BS Grupo"></picture></div>
                 <div class="col-sm-3">
-                    <a class="titulo">BS GRUPO</a>
+                    <a class="titulo">BSCIT</a>
                     <ul class="sub-menu-footer">
                         <li><a href="/acerca-bsgrupo#valores">Valores corporativos</a></li>
                         <li><a href="/acerca-bsgrupo#numeros">En números</a></li>
