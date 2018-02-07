@@ -103,8 +103,20 @@ header.masthead{padding-top:10rem;padding-bottom:calc(10rem - 56px);background-i
 .panel12 {
     margin-bottom: 20px;
     background-color: #ffffff;
-    border: 1px solid transparent;
+    border: 1px solid #ddd;
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+    padding: 1%;
+    margin-left: 40%;
+    margin-right: 35%;
+    box-shadow: 0 2px 5px #999;
+    margin-top: 4%;
+}
+
+
+.Titulo3 {
+    text-align: center;
+    font-family: "Roboto";
+    padding-left: 145%;
+    font-size: 25px;
 }
