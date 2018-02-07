@@ -11,8 +11,8 @@ using System;
 namespace bscitgroup.Migrations
 {
     [DbContext(typeof(bscitgroupContext))]
-    [Migration("20180206171100_Initial")]
-    partial class Initial
+    [Migration("20180207151628_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -40,8 +40,7 @@ namespace bscitgroup.Migrations
 
             modelBuilder.Entity("bscitgroup.Models.Persona", b =>
                 {
-                    b.Property<int>("DNI")
-                        .ValueGeneratedOnAdd();
+                    b.Property<int>("DNI");
 
                     b.Property<string>("Apellido")
                         .IsRequired();

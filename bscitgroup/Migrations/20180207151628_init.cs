@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace bscitgroup.Migrations
 {
-    public partial class Initial : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,8 +13,7 @@ namespace bscitgroup.Migrations
                 name: "Persona",
                 columns: table => new
                 {
-                    DNI = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    DNI = table.Column<int>(nullable: false),
                     Apellido = table.Column<string>(nullable: false),
                     Celular = table.Column<string>(nullable: false),
                     Ciudad = table.Column<string>(nullable: false),

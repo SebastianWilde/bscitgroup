@@ -4,12 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace bscitgroup.Models
 {
     public class Persona
     {
-        [Key]
+        [Key,DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int DNI { get; set; }
         [Required]
         public string Nombre { get; set; }

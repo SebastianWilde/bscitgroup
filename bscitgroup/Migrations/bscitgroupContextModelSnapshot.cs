@@ -39,8 +39,7 @@ namespace bscitgroup.Migrations
 
             modelBuilder.Entity("bscitgroup.Models.Persona", b =>
                 {
-                    b.Property<int>("DNI")
-                        .ValueGeneratedOnAdd();
+                    b.Property<int>("DNI");
 
                     b.Property<string>("Apellido")
                         .IsRequired();
