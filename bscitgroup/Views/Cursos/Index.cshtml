@@ -1,0 +1,149 @@
+﻿@model IEnumerable<bscitgroup.Models.Curso>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pago)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImagenCurso)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImagenCurso2)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Contenido)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Contenido2)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EContenido1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EContenido2)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Objetivo1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Objetivo2)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Objetivo3)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Objetivo4)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Objetivo5)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Publico)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Certificacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Instructor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fechainicio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fechafin)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Informe)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Informe2)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImagenCurso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImagenCurso2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contenido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contenido2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EContenido1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EContenido2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Objetivo1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Objetivo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Objetivo3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Objetivo4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Objetivo5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Certificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Instructor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fechainicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fechafin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Informe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Informe2)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

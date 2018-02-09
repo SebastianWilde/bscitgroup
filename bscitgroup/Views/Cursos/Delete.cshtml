@@ -1,0 +1,141 @@
+﻿@model bscitgroup.Models.Curso
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Curso</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pago)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pago)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagenCurso)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImagenCurso)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagenCurso2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImagenCurso2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contenido)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contenido)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contenido2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contenido2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EContenido1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EContenido1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EContenido2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EContenido2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Objetivo1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Objetivo1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Objetivo2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Objetivo2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Objetivo3)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Objetivo3)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Objetivo4)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Objetivo4)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Objetivo5)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Objetivo5)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Publico)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Publico)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Certificacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Certificacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Instructor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Instructor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fechainicio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fechainicio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fechafin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fechafin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Informe)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Informe)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Informe2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Informe2)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
