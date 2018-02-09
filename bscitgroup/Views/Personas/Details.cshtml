@@ -11,12 +11,6 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.DNI)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DNI)
-        </dd>
-        <dt>
             @Html.DisplayNameFor(model => model.Nombre)
         </dt>
         <dd>
@@ -69,6 +63,66 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Correo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Intereses)
+        </dt>
+        <dd>
+            <table class="table">
+
+                @foreach (var item in Model.Intereses)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                </tr>
+                }
+            </table>
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonaServicioDetalles)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Nombre del serivicio</th>
+                    <th>Tipo del serivicio</th>
+                    <th>Fecha de inicio</th>
+                    <th>Fecha de fin</th>
+                    <th>Hora de inicio</th>
+                    <th>Hora de fin</th>
+                    <th>¿Participó?</th>
+
+                </tr>
+                @foreach (var item in Model.PersonaServicioDetalles)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServicioDetalle.Servicio.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServicioDetalle.Servicio.Tipo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServicioDetalle.FechaInicio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServicioDetalle.FechaFin)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServicioDetalle.HoraInico)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServicioDetalle.HoraFin)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Participacion)
+                    </td>
+                </tr>
+        }
+            </table>
         </dd>
     </dl>
 </div>

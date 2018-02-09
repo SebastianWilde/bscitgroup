@@ -14,6 +14,5 @@ namespace bscitgroup.Models
 
         [Required]
         public string Nombre { get; set; }
-
     }
 }

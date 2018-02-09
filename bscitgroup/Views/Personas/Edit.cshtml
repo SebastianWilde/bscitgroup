@@ -59,6 +59,34 @@
                 <span asp-validation-for="Correo" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <table>
+                        <tr>
+                            @{ 
+                                int cnt = 0;
+                                List<bscitgroup.ViewModels.InteresesPersona> categorias = ViewBag.Categorias;
+                                foreach (var categoria in categorias)
+                                {
+                                    if (cnt++ % 3 == 0)
+                                    {
+                                        @:</tr><tr>
+                                    }
+                                    @:<td>
+                                        <input type="checkbox"
+                                               name="selectedCategorias"
+                                               value="@categoria.CategoriaID"
+                                               @(Html.Raw(categoria.Asignado?"checked=\"checked\"" : ""))/>
+                                               @categoria.Nombre
+                                    @:</td>
+                                }
+                                @:</tr>
+                            }
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </form>

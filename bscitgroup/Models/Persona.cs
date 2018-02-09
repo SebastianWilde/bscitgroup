@@ -13,25 +13,41 @@ namespace bscitgroup.Models
     {
         [Key,DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int DNI { get; set; }
+
         [Required]
         public string Nombre { get; set; }
+
         [Required]
         public string Apellido { get; set; }
+
         [Required]
         public string Celular { get; set; }
+
+        [Display(Name = "Teléfono")]
         public string Telefono { get; set; }
+
         [Required]
+        [Display(Name = "País")]
         public string Pais { get; set; }
+
         [Required]
         public string Ciudad { get; set; }
+
         [Required]
+        [Display(Name = "Profesión")]
         public string Profesion { get; set; }
+
         [Required]
+        [Display(Name = "Institución")]
         public string Institucion { get; set; }
+
         [Required]
+        [EmailAddress(ErrorMessage = "Direccion de correo inválida")]
         public string Correo { get; set; }
 
-        public ICollection<Categorias> Intereses { get; set; }
+        public virtual ICollection<Categorias> Intereses { get; set; }
 
+        [Display(Name = "Servicios registrados")]
+        public virtual ICollection<PersonaServicioDetalle> PersonaServicioDetalles { get; set; }
     }
 }
