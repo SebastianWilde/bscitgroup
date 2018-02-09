@@ -1,0 +1,426 @@
+﻿@model bscitgroup.Models.Curso
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <p>
+
+    </p>
+
+    <p>
+
+    </p>
+
+    <p>
+
+    </p>
+    <hr />
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Title -->
+                <h1 class="mt-41">@Html.DisplayFor(model => model.Nombre)</h1>
+
+                <p class="lead">
+                    Por
+                    <a href="#">Grupo BSCIT</a>
+                </p>
+
+                <!-- Date/Time -->
+                <p>Fecha y Hora de Inicio:</p><p>@Html.DisplayFor(model => model.Fechainicio) </p>
+                
+                
+                <hr>
+
+
+                @Html.Raw(Model.ImagenCurso2)
+
+                <!--<img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">-->
+
+                <hr>
+                <!-- Post Content -->
+                <div class="titulo4">Contenido</div>
+                <p class="lead">
+                    @Html.DisplayFor(model => model.Contenido)
+
+                </p>
+                <br>
+                <div class="titulo4">Objetivos </div>
+
+                <p>
+                    @Html.DisplayFor(model => model.Objetivo1)
+                </p>
+                <p>
+                    @Html.DisplayFor(model => model.Objetivo2)
+                </p>
+                <p>
+                    @Html.DisplayFor(model => model.Objetivo2)
+                </p>
+                <p>
+                    @Html.DisplayFor(model => model.Objetivo4)
+                </p>
+                <p>
+                    @Html.DisplayFor(model => model.Objetivo5)
+                </p>
+
+
+                <br>
+
+                <div class="titulo4">Expositores</div>
+                <p>Yessenia Inchuña Valdez</p>
+
+
+                <!-- Comments Form -->
+                <!-- Comments Form -->
+                <!-- Comments Form -->
+                <div class="card my-4">
+                    <h5 class="card-header"></h5>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Single Comment -->
+                <div class="media mb-4">
+                    <div class="media-body">
+                    </div>
+                </div>
+                <!-- Comment with nested comments -->
+                <div class="media mb-4">
+                    <div class="media-body">
+
+                        <div class="media mt-4">
+                            <div class="media-body">
+                            </div>
+                        </div>
+                        <div class="media mt-4">
+                            <div class="media-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+                <!-- Search Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Busqueda</h5>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Busqueda de Cursos">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Buscar</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Cursos</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#">Curso1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Curso2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Curso3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#">Curso4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Curso5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Curso6</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Lugar de Informacion</h5>
+                    <div class="card-body">
+                        Costo:
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!--
+                <dl class="dl-horizontal">
+
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Nombre)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Nombre)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Pago)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Pago)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ImagenCurso)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ImagenCurso)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ImagenCurso2)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ImagenCurso2)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Contenido)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Contenido)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Contenido2)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Contenido2)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.EContenido1)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.EContenido1)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.EContenido2)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.EContenido2)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Objetivo1)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Objetivo1)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Objetivo2)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Objetivo2)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Objetivo3)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Objetivo3)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Objetivo4)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Objetivo4)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Objetivo5)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Objetivo5)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Publico)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Publico)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Certificacion)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Certificacion)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Instructor)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Instructor)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Fechainicio)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Fechainicio)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Fechafin)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Fechafin)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Informe)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Informe)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Informe2)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Informe2)
+                      <!--
+            <dl class="dl-horizontal">
+
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Nombre)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Pago)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Pago)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.ImagenCurso)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.ImagenCurso)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.ImagenCurso2)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.ImagenCurso2)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Contenido)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Contenido)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Contenido2)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Contenido2)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.EContenido1)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.EContenido1)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.EContenido2)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.EContenido2)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Objetivo1)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Objetivo1)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Objetivo2)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Objetivo2)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Objetivo3)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Objetivo3)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Objetivo4)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Objetivo4)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Objetivo5)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Objetivo5)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Publico)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Publico)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Certificacion)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Certificacion)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Instructor)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Instructor)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Fechainicio)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Fechainicio)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Fechafin)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Fechafin)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Informe)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Informe)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Informe2)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Informe2)
+                </dd>
+            </dl>-->
+        </div>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
